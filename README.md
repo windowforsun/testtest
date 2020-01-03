@@ -7,8 +7,10 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfQI2QRAy7UWVO2oE5YRCNapgtxYLLy1CWDeXJG3T6
 
 ```uml
 @startuml
-node app
-database db
-app - db
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
 @enduml
 ```  
